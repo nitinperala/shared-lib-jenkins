@@ -1,4 +1,4 @@
-package com.nithin.jenkinspipeline
+#!/usr/bin/groovy
 
 def checkOutFrom(repo) {
   

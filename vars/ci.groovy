@@ -1,5 +1,4 @@
-package com.nithin.jenkinspipeline
-import com.nithin.jenkinspipeline
+#!/usr/bin/groovy
 def call(Map pipelineParams)
 {
         node {
