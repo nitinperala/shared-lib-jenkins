@@ -1,5 +1,5 @@
 package com.nithin.jenkinspipeline
-
+import com.nithin.jenkinspipeline
 def call(Map pipelineParams)
 {
         node {
