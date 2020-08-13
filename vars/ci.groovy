@@ -16,7 +16,7 @@ def call(Map pipelineParams)
         }
          stage('Build') {
         // Run the maven build
-        new mvnbuild.buildcmd(pipelineParams.mvnbuild,mvnHome)
+        new mvnbuild().buildcmd(pipelineParams.mvnbuild,mvnHome)
         
     }
     }
