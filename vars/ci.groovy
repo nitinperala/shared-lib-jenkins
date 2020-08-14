@@ -8,6 +8,7 @@ def call(body)
         node {
             def mvnHome
             env.name = "nithin"
+            pipelineParams[branch] = 'master'
             stage('Preparation') { // for display purposes
                 // Get some code from a GitHub repository
             //git 'https://github.com/nitinperala/RunnableJar.git'
