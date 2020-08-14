@@ -7,6 +7,7 @@ def call(body)
     body()
         node {
             def mvnHome
+            env.name = "nithin"
             stage('Preparation') { // for display purposes
                 // Get some code from a GitHub repository
             //git 'https://github.com/nitinperala/RunnableJar.git'
@@ -19,8 +20,8 @@ def call(body)
                 mvnHome = tool 'Maven'
             }
             stage('Build') {
-            // Run the maven build
-            new mvnbuild().buildcmd(pipelineParams.mvnbuild,mvnHome)
+                // Run the maven build
+                new mvnbuild().buildcmd(pipelineParams.mvnbuild,mvnHome)
             
         }
         stage('Results') {
