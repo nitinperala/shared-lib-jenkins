@@ -13,7 +13,7 @@ def call(body)
             //git 'https://github.com/nitinperala/RunnableJar.git'
                 def chckOut = new cipull()
                 chckOut.checkOutFrom(pipelineParams.repo)
-                
+                print "Name is ${env.name}"
                 // Get the Maven tool.
                 // ** NOTE: This 'M3' Maven tool must be configured
                 // **       in the global configuration.
