@@ -1,6 +1,10 @@
 #!/usr/bin/groovy
-def call(Map pipelineParams)
+def call(body)
 {
+    def pipelineParams= [:]
+    body.resolveStrategy = Closure.DELEGATE_FIRST
+    body.delegate = pipelineParams
+    body()
         node {
             def mvnHome
             stage('Preparation') { // for display purposes
